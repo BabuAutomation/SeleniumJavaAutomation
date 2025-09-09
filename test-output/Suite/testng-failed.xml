@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="Broswer" value="Edge"/>
     <classes>
       <class name="Testng.Annotationandpriority">
         <methods>
-          <include name="OpenApp"/>
+          <include name="OpenApp" invocation-numbers="0"/>
+          <include name="CloseApp"/>
           <include name="Login"/>
         </methods>
       </class> <!-- Testng.Annotationandpriority -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

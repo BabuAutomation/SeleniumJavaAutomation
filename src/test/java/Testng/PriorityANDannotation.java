@@ -8,17 +8,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PriorityANDannotation {
 	
 	WebDriver driver;
+	 
 	
 	@Test(priority=1)
 	void OpenApp()
 	{
-		driver =new ChromeDriver();
+		driver =new EdgeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		

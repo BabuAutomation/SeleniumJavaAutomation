@@ -30,7 +30,8 @@ public class ScreenShots {
 		File Textpage= Ikons.getScreenshotAs(OutputType.FILE);
 		File  TxtTrg=new File("C:\\Users\\DELL\\eclipse-workspace\\Techqflow1\\ScreenShots\\Txt.png");
 		FileUtils.copyFile(Textpage, TxtTrg);
+		
+		driver.manage().deleteAllCookies();
 	
 	}
-
 }
